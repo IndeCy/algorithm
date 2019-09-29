@@ -4,6 +4,14 @@ import java.util.List;
 
 public class Test3 {
 
+    class A{
+        protected final void print("method a");
+    }
+
+    class B extends A{
+
+    }
+
     public static void main(String[] args) {
 //        Integer[] ints = new Integer[10];
 //        List<Integer> l = Arrays.asList(ints);
@@ -23,9 +31,15 @@ public class Test3 {
 //        }else {
 //            System.out.println("false");
 //        }
-        Long a = 105L;
+//        Long a = 105L;
 //        System.out.println((int)a);
-        System.out.println(new BigDecimal("100").toString());
+//        System.out.println(new BigDecimal("100").toString());
+        System.out.println(-1 >>> 1);
+        System.out.println(-1 >> 1);
+        System.out.println((int)Math.pow(2,31) >> 8);
+        System.out.println((int)Math.pow(2,31) >>> 8);
+
+        new B().print();
 
     }
 }
