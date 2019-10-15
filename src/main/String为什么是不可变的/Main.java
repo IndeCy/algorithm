@@ -17,7 +17,6 @@ public class Main {
         test.exchange(test.i,test.str,chars);
         System.out.println(test.str);
         System.out.println(chars);
-        Thread
         System.out.println(test.i);
     }
 }

@@ -1,4 +1,4 @@
-package main.HuffmanTree;
+package HuffmanTree;
 
 import Node.BinTreeNode;
 
