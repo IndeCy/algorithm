@@ -1,6 +1,7 @@
 package 序列化测试;
 
 import java.io.*;
+import java.util.ArrayList;
 
 public class Main {
 
