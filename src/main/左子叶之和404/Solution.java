@@ -24,4 +24,18 @@ public class Solution {
         sum += sumOfLeftLeaves(root.right);
         return sum;
     }
+
+    public int sumOfLeftLeaves2(TreeNode root){
+        if(root == null){
+            return 0;
+        }
+        int sum=0;
+        if(root.left != null && root.left.left == null && root.left.right == null){
+            sum += root.left.val;
+        }else{
+            sum += sumOfLeftLeaves2(root.left);
+        }
+        sum += sumOfLeftLeaves2(root.right);
+        return sum;
+    }
 }

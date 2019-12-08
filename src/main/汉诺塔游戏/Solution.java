@@ -21,7 +21,7 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        hanotio(3,'X','Y','Z');
+        hanotio(4,'X','Y','Z');
     }
 
 }

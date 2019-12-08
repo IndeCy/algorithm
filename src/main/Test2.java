@@ -37,9 +37,9 @@ public class Test2 {
 //        String bbb = "c,c,b";
 //        int ccc = Integer.MAX_VALUE;
 //        System.out.println(ccc);
-        Integer a = new Integer(500000);
-        Integer b = new Integer(500000);
-        System.out.println(a==500000);
+        String a = "125";
+        System.out.println(Integer.parseInt(a));
+        System.out.println(Integer.valueOf(a));
 
     }
 
