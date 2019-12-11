@@ -46,9 +46,26 @@ public class Solution {
     public static void main(String[] args) {
         ListNode head = GenerateList.getList("1,2,3,4,5,6");
         System.out.println(head.val);
-        ListNode newHead = reverseList3(head);
-        System.out.println(newHead.val);
+//        ListNode newHead = reverseList3(head);
+//        System.out.println(newHead.val);
+        reverseList22(head);
+        System.out.println("sss");
 
+    }
+
+
+    /**
+     * 与 reverseList3 相比较不会返回尾结点 本质上还是实现了翻转 解释了为什么要返回p节点
+     * @param head
+     */
+    static void reverseList22(ListNode head){
+        if(head == null || head.next == null){
+            return;
+        }
+        reverseList22(head.next);
+        head.next.next = head;
+        head.next = null;
+        //为什么return temp？temp是前一个反转好的节点
     }
 
 
