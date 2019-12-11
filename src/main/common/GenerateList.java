@@ -24,7 +24,7 @@ public class GenerateList {
 //        ListNode head = getList("2,3,4,5,6");
 //        System.out.println(head.val);
 
-        TreeNode tree = getTree("[10,5,-3,3,2,null,11,3,-2,null,1]");
+        TreeNode tree = getTree("[1,null,2,null,3,null,4,null,5]");
         System.out.println("11");
     }
 
