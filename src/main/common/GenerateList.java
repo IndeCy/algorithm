@@ -40,25 +40,35 @@ public class GenerateList {
             }
             nodeList.add(treeNode);
         }
-        for (int i = 1; i < nodeList.size(); i++) {
+        for (int i = 1,j=1; i < nodeList.size(); i++) {
             TreeNode temp = nodeList.get(i);
             if(temp == null){
                 continue;
             }
-            if(2*i >= nodeList.size()){
+            if(2*j >= nodeList.size()){
                 temp.left = null;
                 break;
             }else {
-                temp.left = nodeList.get(2 * i);
+                temp.left = nodeList.get(2 * j);
             }
-            if(2*i + 1 >= nodeList.size()) {
+            if(2*j + 1 >= nodeList.size()) {
                 temp.right = null;
                 break;
             }else {
-                temp.right = nodeList.get(2 * i + 1);
+                temp.right = nodeList.get(2 * j + 1);
 
             }
+            j++;
         }
         return nodeList.get(1);
     }
+
+    public static char[] getCharArray(String s){
+        s = s.substring(2,s.length()-2);
+        String[] split = s.split("\",\"");
+        char[] res = new char[split.length];
+        System.arraycopy(split,0,res,0,res.length);
+        return res;
+    }
+
 }
