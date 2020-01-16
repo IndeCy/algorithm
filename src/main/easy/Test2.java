@@ -42,7 +42,25 @@ public class Test2 {
         String a = "125";
         System.out.println(Integer.parseInt(a));//返回的是基本数据类型
         System.out.println(Integer.valueOf(a));//返回的是Integer对象
+        System.out.println("a".substring(0,0));
+        System.out.println((Integer)null);
+        TestTT tt = new TestTT();
+        tt.setA((Integer)null);
+        System.out.println(tt.getA());
+        System.out.println("a".substring(0,1));
 
+    }
+
+    static class TestTT{
+        Integer a;
+
+        public Integer getA() {
+            return a;
+        }
+
+        public void setA(Integer a) {
+            this.a = a;
+        }
     }
 
     public static String replaceUrl(String url) {
