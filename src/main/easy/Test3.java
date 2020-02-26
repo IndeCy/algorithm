@@ -28,5 +28,6 @@ public class Test3 {
         System.out.println(l);
         System.out.println(i);
         System.out.println(b+" "+c+" "+" "+d);
+
     }
 }

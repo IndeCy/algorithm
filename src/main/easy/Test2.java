@@ -6,13 +6,21 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.function.IntConsumer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Test2 {
     public static final String REGEX_URL = "^(http(s){0,1}:\\/\\/.+?)(\\/|\\?|$)";
 
+    class Inner{
+        private String url;
+    }
 
+    public boolean validate(){
+        String regex = "[0-9][6]";
+        return new Inner().url.matches(regex);
+    }
 
 
     public static void main(String[] args) {
