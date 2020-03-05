@@ -15,18 +15,24 @@ public class TestLambda {
     static BigDecimal seven = new BigDecimal(7);
 
     public static void main(String[] args) {
-        List<Sorter> list = new ArrayList<>();
+//        List<Sorter> list = new ArrayList<>();
+//
+//
+//        list.add(new Sorter(BigDecimal.ONE,BigDecimal.TEN));//0.1
+//        list.add(new Sorter(six,BigDecimal.TEN));           //0.6
+//        list.add(new Sorter(seven,BigDecimal.TEN));         //0.7
+//        list.add(new Sorter(five,five));          //0.5
+//
+//        List<Sorter> result = sort(list);
+//        result.stream().forEach(sorter -> System.out.println(sorter.getFirst()+"-----"+sorter.getSecond()));
+//
+//        System.out.println(new BigDecimal(1).divide(new BigDecimal(1000000),10,BigDecimal.ROUND_HALF_DOWN));
 
-
-        list.add(new Sorter(BigDecimal.ONE,BigDecimal.TEN));//0.1
-        list.add(new Sorter(six,BigDecimal.TEN));           //0.6
-        list.add(new Sorter(seven,BigDecimal.TEN));         //0.7
-        list.add(new Sorter(five,five));          //0.5
-
-        List<Sorter> result = sort(list);
-        result.stream().forEach(sorter -> System.out.println(sorter.getFirst()+"-----"+sorter.getSecond()));
-
-        System.out.println(new BigDecimal(1).divide(new BigDecimal(1000000),10,BigDecimal.ROUND_HALF_DOWN));
+        int a = 63;
+        System.out.println(a >> 3);
+        System.out.println(a >> 3 << 3);
+        int b = (a >> 3) << 3;
+        System.out.println(b);
     }
 
     public static List<Sorter> sort(List<Sorter> list){
