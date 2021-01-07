@@ -1,12 +1,6 @@
 package easy;
 
-import com.sun.tools.javac.util.ArrayUtils;
-
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.function.IntConsumer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
