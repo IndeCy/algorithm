@@ -18,6 +18,7 @@ public class JSONtest {
     }
 
     public static String generateString(){
+        String[] s1 = "".split(" ");
         RuleOptionDO a = new RuleOptionDO();
         a.setFact("licenseNo");
         a.setOptStringMatch("string");
