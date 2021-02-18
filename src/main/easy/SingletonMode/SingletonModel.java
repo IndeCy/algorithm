@@ -1,6 +1,9 @@
 package easy.SingletonMode;
 
 
+/**
+ * 内部类的实现方式
+ */
 public class SingletonModel {
 
     private SingletonModel(){}

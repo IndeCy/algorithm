@@ -1,4 +1,4 @@
-package easy;
+package easy.按序打印;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
