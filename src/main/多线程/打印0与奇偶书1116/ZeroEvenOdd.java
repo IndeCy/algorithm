@@ -1,8 +1,10 @@
 package 多线程.打印0与奇偶书1116;
 
+import main.多线程.打印0与奇偶书1116.ZeroEvenOddI;
+
 import java.util.function.IntConsumer;
 
-public class ZeroEvenOdd {
+public class ZeroEvenOdd implements ZeroEvenOddI {
 
     private int n;
 

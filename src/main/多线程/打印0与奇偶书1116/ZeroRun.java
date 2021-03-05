@@ -1,20 +1,22 @@
 package 多线程.打印0与奇偶书1116;
 
+import main.多线程.打印0与奇偶书1116.ZeroEvenOddI;
+
 public class ZeroRun implements Runnable{
 
 
-    private ZeroEvenOdd2 zeroEvenOdd2;
-    private PrintInt printInt;
+    private ZeroEvenOddI zeroEvenOdd;
+    private 多线程.打印0与奇偶书1116.PrintInt printInt;
 
-    public ZeroRun(ZeroEvenOdd2 zeroEvenOdd2,PrintInt printInt) {
-        this.zeroEvenOdd2 = zeroEvenOdd2;
+    public ZeroRun(ZeroEvenOddI zeroEvenOdd, 多线程.打印0与奇偶书1116.PrintInt printInt) {
+        this.zeroEvenOdd = zeroEvenOdd;
         this.printInt = printInt;
     }
 
     @Override
     public void run() {
         try {
-            zeroEvenOdd2.zero(printInt);
+            zeroEvenOdd.zero(printInt);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

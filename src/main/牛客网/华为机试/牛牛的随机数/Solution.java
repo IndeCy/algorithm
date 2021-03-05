@@ -13,12 +13,13 @@ public class Solution{
             if(end == null || end.length() == 0){
                 break;
             }
+            set.clear();
             int count = Integer.parseInt(end);
             for(int i = 0; i < count; i++){
-                set.add(scan.nextInt());
+                set.add(Integer.parseInt(scan.nextLine()));
             }
+            set.forEach(System.out::println);
         }
-        set.forEach(System.out::println);
 
 
     }

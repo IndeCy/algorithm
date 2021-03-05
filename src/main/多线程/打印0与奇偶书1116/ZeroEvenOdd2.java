@@ -1,11 +1,13 @@
 package 多线程.打印0与奇偶书1116;
 
+import main.多线程.打印0与奇偶书1116.ZeroEvenOddI;
+
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.function.IntConsumer;
 
-public class ZeroEvenOdd2 {
+public class ZeroEvenOdd2 implements ZeroEvenOddI {
 
     private int n;
 
