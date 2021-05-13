@@ -1,4 +1,4 @@
-package main.多线程.打印0与奇偶书1116;
+package 多线程.打印0与奇偶书1116;
 
 import java.util.function.IntConsumer;
 

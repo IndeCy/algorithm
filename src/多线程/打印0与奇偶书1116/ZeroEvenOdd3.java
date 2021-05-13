@@ -1,11 +1,11 @@
-package main.多线程.打印0与奇偶书1116;
+package 多线程.打印0与奇偶书1116;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.IntConsumer;
 
 /**
- * @Package: main.多线程.打印0与奇偶书1116
+ * @Package: 多线程.打印0与奇偶书1116
  * @Author: chenyang
  * @Date: 2021/2/24
  * @Version: 1.0

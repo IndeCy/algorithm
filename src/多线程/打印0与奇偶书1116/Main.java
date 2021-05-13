@@ -1,7 +1,5 @@
 package 多线程.打印0与奇偶书1116;
 
-import main.多线程.打印0与奇偶书1116.ZeroEvenOdd3;
-
 public class Main {
 
     public static void main(String[] args) {

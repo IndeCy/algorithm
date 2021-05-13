@@ -1,4 +1,4 @@
-package 牛客网.华为机试.牛牛的随机数;
+package main.牛客网.华为机试.牛牛的随机数;
 
 import java.util.Scanner;
 import java.util.*;
